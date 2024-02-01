@@ -1,0 +1,2 @@
+# Verifica
+Para recordar comandos

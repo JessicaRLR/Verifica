@@ -1,0 +1,86 @@
+\documentclass[letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[a4paper]{geometry}
+\geometry{top=2cm, bottom=2cm, left=2cm, right=2cm}
+
+
+\usepackage{pdfpages}
+\usepackage{permute}
+\renewcommand*\pmtseparator{\ }
+\usepackage{amsmath}
+\usepackage{bbm}
+\usepackage{amssymb}
+\usepackage{dashrule}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{bm}
+
+\pagestyle{fancy}
+\fancyhf{} % limpia encabezado y pie
+
+
+\usepackage[amsmath, thmmarks]{ntheorem}
+\theoremseparator{.}
+\theoremprework{\hrule}
+\newtheorem{eje}{Ejercicio}
+\newtheorem{lema}{Lema}
+
+\newtheorem*{sol}{\textbf{Solución}}
+\theorempostwork{\vspace{\baselineskip}}
+\newtheorem*{dem}{\textbf{Demostración}}
+
+\newcommand{\ep}{\varepsilon}
+\newcommand{\fle}{\Rightarrow}
+\newcommand{\ssi}{\Leftrightarrow}
+\newcommand{\si}{\Leftrightarrow}
+\newcommand{\nrm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\ind}{\mathbbm{1}}
+
+\allowdisplaybreaks
+
+\begin{document}
+    \begin{flushleft}
+        % Logotipo alineado a la izquierda
+        \includegraphics[width=0.12\textwidth]{EscudoCimat.png}
+    \end{flushleft}
+    
+    \vspace{-3.2cm} % Ajusta este valor si necesitas que el logo quede más cerca del texto principal
+    {\vspace{0.9cm}\hspace{2.2cm}{\LARGE{Introducci\'on a Ciencia de Datos} }\hspace{3cm}{\Large{Tarea 1} }\\
+      
+      \hspace{2.2cm}
+      {\Large
+      Fundamentos y Preparaci\'on de los Datos
+      }\\
+
+      \vspace{0.5cm}
+      \hspace{2.2cm}
+      {\large
+      Rub\'i Lara \hspace{1cm}
+      Eric Palomino \hspace{1cm}
+      Eric
+      }
+    }
+
+% Encabezado: línea, nombre y título
+\fancyhead[R]{ -- }
+\fancyhead[L]{Fundamentos y Preparaci\'on de los Datos}
+
+% Número de página en el pie, centrado
+\fancyfoot[C]{\thepage}
+
+
+\thispagestyle{empty}
+
+
+    \begin{enumerate}
+      \item \textbf{Distribuci\'on de los residuos estandarizados}
+      Bajo el modelo lineal cl\'asico con errores normales, demuestre que los residuos estandarizados
+      \begin{align*}
+        r_i = \frac{e_i}{\hat{\sigma}\sqrt{1 - h_{ii}}}
+      \end{align*}
+      tienen, aproximadamente, distribuci\'on $t$ de Student con $n-p-1$ grados de librtad. Explique c\'omo esta propiedad
+      justifica su uso en la detecci\'on de outliers.
+      \item 
+    \end{enumerate}
+\end{document}
